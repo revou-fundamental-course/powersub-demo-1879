@@ -1,16 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelan</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link real="stylesheet" href="css/styles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="home-icon"></div>
+      <nav>
+        <a href="#home-section" class="active">Home</a>
+        <a href="#our-package-section" class="active">Our Package</a>
+        <a href="#call-us-section" class="active">Call Us</a>
+      </nav>
+    </header>
+    <!-- <hr /> -->
 
-</head>
+    <main>
+      <header class="main-content-header">
+        <h1><span>Travelan, </span>Your Trusted Travel Agent</h1>
+        <p>Your Happiness is Our Hapiness. Let us take care of the details, so you can focus on creating moments of joy and discovery</h>
+        <br>
+        <button>Join Us</button>
+      </header>
 
-<body>
+      <!-- Main Content -->
+      <section class="main-container" id="home-section">
+        <!-- Banner autoslider -->
+        <aside class="main-item banner">
+          <div class="banner-img">
+            <img class="banner-slide" src="./assets/images/Bali.jpg" alt="Banner 1">
+            <img class="banner-slide" src="./assets/images/Jakarta.jpg" alt="Banner 2">
+            <img class="banner-slide" src="./assets/images/Madura.jpg" alt="Banner 3">
+            <img class="banner-slide" src="./assets/images/Surabaya.jpg" alt="Banner 4">
+          </div>
+        </aside>
 
-</body>
+        <!-- Form Contact Us -->
+        <form id="contactForm" class="main-item form">
+            <h3>Contact Us</h3>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami diterima</p>
+            
+            <div class="form-item">
+                <label class="form-label" for="name">Your Name</label>
+                <input class="form-input" type="text" id="name" placeholder="First and last name" >
+            </div>
 
+            <div class="form-item">
+                <label class="form-label" for="email">Email Adress</label>
+                <input class="form-input" type="email" id="email" placeholder="example@email.com" >
+            </div>
+
+            <div class="form-item">
+                <label class="form-label" for="email">What are you interested in?</label>
+                <select class="form-input" name="interest" id="interest" >
+                    <option value="option" selected disabled>Select Option</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Bali">Bali</option>
+                    <option value="Madura">Madura</option>
+                    <option value="Surabaya">Surabaya</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" class="form-input" name="message" rows="2" placeholder="Type your message here..." ></textarea>
+          </div>
+            
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </section>
+
+    <!-- Our Services -->
+      <section class="service-section">
+          <h1>Our Services</h1>
+          <div class="service-box">
+              <div class="service-item">
+                  <div class="service-icon">
+                    <h3>1</h3>
+                  </div>
+                  <div class="details">
+                    <h4>First Service</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+              </div>
+              <div class="service-item">
+                  <div class="service-icon">
+                    <h3>2</h3>
+                  </div>
+                  <div class="details">
+                    <h4>Second Service</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+              </div>
+              <div class="service-item">
+                  <div class="service-icon">
+                    <h3>3</h3>
+                  </div>
+                  <div class="details">
+                    <h4>Third Service</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+    <!-- Testimonial -->
+      <section class="testi-section">
+          <h1>Testimoni</h1>
+          <div class="container-testimonial">
+              <p class="testi-item">"Liburan jadi menyenangkan dengan Travelan."</p>
+              <div class="testi-profile">
+                  <div class="avatar"></div>
+                  <div class="profile">
+                      <h4>Sigma</h4>
+                      <span>Officer, 25</span>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Our Package -->
+      <section id="our-package-section" class="package-section">
+        <header class="package-header">
+          <h1>Our Package</h1>
+        </header>
+
+        <div class="package-container">
+          <div class="package-item">
+            <div class="package-icon">
+              <img src="./assets/icon/light-bulb.png" alt="">
+            </div>
+            <div class="package-item-content">
+              <h4>Bali</h4>
+              <p>Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+          </div>
+          <div class="package-item">
+            <div class="package-icon">
+              <img src="./assets/icon/light-bulb.png" alt="">
+            </div>
+            <div class="package-item-content">
+              <h4>Bali</h4>
+              <p>Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+          </div>
+          <div class="package-item">
+            <div class="package-icon">
+              <img src="./assets/icon/light-bulb.png" alt="">
+            </div>
+            <div class="package-item-content">
+              <h4>Bali</h4>
+              <p>Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="package-container">
+          <div class="package-item">
+            <div class="package-icon">
+              <img src="./assets/icon/star.png" alt="">
+            </div>
+            <div class="package-item-content">
+              <h4>Bali</h4>
+              <p>Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+          </div>
+          <div class="package-item">
+            <div class="package-icon">
+              <img src="./assets/icon/star.png" alt="">
+            </div>
+            <div class="package-item-content">
+              <h4>Bali</h4>
+              <p>Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+          </div>
+          <div class="package-item">
+            <div class="package-icon">
+              <img src="./assets/icon/star.png" alt="">
+            </div>
+            <div class="package-item-content">
+              <h4>Bali</h4>
+              <p>Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call Us -->
+      <section class="callus-container" id="call-us-section">
+        <div class="callus-item image-callus">
+          <img src="https://images.unsplash.com/photo-1731370963500-b836d108f7c9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image-callus">
+        </div>
+
+        <div class="callus-item text-callus">
+            <h1>Call Us</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam accusamus minus quibusdam sapiente consequuntur ducimus corrupti quis, soluta sed rem a ad, iste deserunt alias veritatis corporis fugiat quod. Quod, minima suscipit! Fugiat sint iste laudantium. Nobis id reprehenderit ab? Aliquam accusamus minus quibusdam sapiente consequuntur ducimus corrupti quis, soluta sed rem a ad</p>
+            <button>Call Now</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Made by Ahmad</span>
+      <br> 2024
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
